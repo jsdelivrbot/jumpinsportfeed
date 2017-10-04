@@ -8,7 +8,7 @@
     var hitmarkerStyles = document.createElement("link");
     hitmarkerStyles.rel = "stylesheet";
     hitmarkerStyles.type = "text/css";
-    hitmarkerStyles.href = "https://rawgit.com/ghostwhitenet/jobs-feed-jumpinsport/master/jumpinsportwidget.css";
+    hitmarkerStyles.href = "https://rawgit.com/ghostwhitenet/jumpinsportfeed/master/jumpinsportwidget.css";
     hitmarkerStyles.media = "all";
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
@@ -40,7 +40,7 @@
     }
       function appendJobs (jobs) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://rawgit.com/ghostwhitenet/jobs-feed-jumpinsport/master/index.html');
+        xhr.open('GET', 'https://rawgit.com/ghostwhitenet/jumpinsportfeed/master/index.html');
         xhr.send(null);
 
         xhr.onreadystatechange = function () {
