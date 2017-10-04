@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+#jumpinsport-widget {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #0A0A0A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: var(--font-weight-normal);
+}
+#jumpinsport-widget img, svg {
+	vertical-align: middle;
+}
+#jumpinsport-widget a {
+	color: currentColor;
+	text-decoration: none;
+}
+#jumpinsport-widget {
+	border: 1px solid #E2E2E2;
+	background-color: #fff;
+}
+#jumpinsport-widget .title {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-size: .75rem;
+	line-height: 1;
+	padding: 1rem;
+
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#jumpinsport-widget .title span {
+	margin-left: .5rem;
+}
+#jumpinsport-widget .job {
+	border-top: 1px solid #E2E2E2;
+	padding: 1rem;
+
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#jumpinsport-widget .job:hover,
+#jumpinsport-widget .job:focus {
+	background-color: #FBFBFB;
+}
+#jumpinsport-widget .logo {
+	margin-right: .75rem;
+
+	-webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+}
+#jumpinsport-widget .info {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 0;
+}
+#jumpinsport-widget .company {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+#jumpinsport-widget .role {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+	font-size: .875rem;
+	margin-bottom: 5px;
+}
+#jumpinsport-widget .location {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+	font-size: .75rem;
+	margin-bottom: 5px;
+}
+#jumpinsport-widget .time {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+	font-size: .75rem;
+	color: #ADADAD;
+}
+#jumpinsport-widget .footer {
+	border-top: 1px solid #E2E2E2;
+	padding: .5rem 1rem;
+
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#jumpinsport-widget .footer a {
+	color: #F70;
+	font-size: .75rem;
+	line-height: 1;
+}
+#jumpinsport-widget .footer span {
+	text-align: right;
+	margin-left: .5rem;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 0;
+}
