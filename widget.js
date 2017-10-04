@@ -17,7 +17,7 @@
     } else if (location) {
       url = 'https://www.jumpinsport.com/jobs-location/' + location + '.json';
     } else {
-      url = 'https://www.jumpinsport.com/jobs.json';
+      url = 'http://localhost:8888/jumpinsport/jobs.json';
     }
 
     var xhr = new XMLHttpRequest();
