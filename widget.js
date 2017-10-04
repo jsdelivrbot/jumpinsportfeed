@@ -13,11 +13,11 @@
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
     if (company) {
-      url = 'https://jumpinsport.com/jobs/' + company + '.json';
+      url = 'https://www.jumpinsport.com/jobs/' + company + '.json';
     } else if (location) {
-      url = 'https://jumpinsport.com/jobs-location/' + location + '.json';
+      url = 'https://www.jumpinsport.com/jobs-location/' + location + '.json';
     } else {
-      url = 'https://jumpinsport.com/jobs.json';
+      url = 'https://www.jumpinsport.com/jobs.json';
     }
 
     var xhr = new XMLHttpRequest();
