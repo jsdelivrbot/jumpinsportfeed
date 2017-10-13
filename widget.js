@@ -1,7 +1,9 @@
 (function (){
     var element = document.getElementById("jumpinsport-jobs-feed");
-    var company = element.getAttribute('company');
-    var location = element.getAttribute('location');
+    var countries = element.getAttribute('countries');
+    var cities = element.getAttribute('cities');
+    var sports = element.getAttribute('sports');
+    var sectors = element.getAttribute('sectors');
     var url;
 
     var normalizeStyles = document.createElement("link");
@@ -12,16 +14,27 @@
     hitmarkerStyles.media = "all";
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
-    if (company) {
-      url = 'https://www.jumpinsport.com/jobs/' + company + '.json';
-    } else if (location) {
-      url = 'https://www.jumpinsport.com/jobs-location/' + location + '.json';
-    } else {
-      url = 'http://localhost:8888/jumpinsport/jobs.json';
-    }
+    url = 'http://localhost:8888/jumpinsport/jobs.json';
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
+
+    if (countries) {
+      xhr.setRequestHeader('countries', countries);
+    }
+
+    if (cities) {
+      xhr.setRequestHeader('cities', cities);
+    }
+
+    if (sports) {
+      xhr.setRequestHeader('sports', sports);
+    }
+
+    if (sectors) {
+      xhr.setRequestHeader('sectors', sectors);
+    }
+
     xhr.send(null);
 
     xhr.onreadystatechange = function () {
@@ -38,6 +51,7 @@
         }
       }
     }
+
       function appendJobs (jobs) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'https://rawgit.com/ghostwhitenet/jumpinsportfeed/master/index.html');
