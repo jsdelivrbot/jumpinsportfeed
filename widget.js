@@ -14,7 +14,7 @@
     hitmarkerStyles.media = "all";
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
-    url = 'https://jumpinsport.com/jobs.json';
+    url = 'https://www.jumpinsport.com/jobs.json';
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
