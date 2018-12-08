@@ -10,7 +10,7 @@
     var hitmarkerStyles = document.createElement("link");
     hitmarkerStyles.rel = "stylesheet";
     hitmarkerStyles.type = "text/css";
-    hitmarkerStyles.href = "https://rawgit.com/ghostwhitenet/jumpinsportfeed/master/jumpinsportwidget.css";
+    hitmarkerStyles.href = "https://cdn.jsdelivr.net/gh/ghostwhitenet/jumpinsportfeed/jumpinsportwidget.css";
     hitmarkerStyles.media = "all";
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 

@@ -4,5 +4,5 @@ Just copy the code below, drop it anywhere you like and you're all set! It's flu
 
 ~~~~
 <div id="jumpinsport-jobs-feed"></div>
-<script src="https://rawgit.com/ghostwhitenet/jumpinsportfeed/master/widget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ghostwhitenet/jumpinsportfeed/widget.js"></script>
 ~~~~
